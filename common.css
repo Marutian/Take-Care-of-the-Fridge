@@ -1,0 +1,58 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    padding: 22px 22px 22px 22px;
+    background-image: url('img/pattern_bg.png');
+    background-repeat: repeat;
+}
+
+p, b{
+    color: white;
+}
+
+ul {
+    width: 100%;
+    display: table;
+    table-layout: fixed; /* optional */
+}
+
+ul li {
+    display: table-cell;
+    width: auto;
+    text-align: center;
+}
+
+#stuff_group{
+    text-align: center;
+}
+
+#recommendation{
+    visibility: hidden;
+    margin-top: 32px;
+}
+
+#recommend_table{
+    display: table;
+    border-collapse: separate;
+    border-spacing: 10px;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+#row{
+    display: table-row;
+}
+
+.recommend_recipe{
+    display: table-cell;
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 22px 22px 22px 22px;
+    text-align: center;
+}
+
+.recipe_name{
+    color: #ff8bb2;
+    font-weight: bold;
+}

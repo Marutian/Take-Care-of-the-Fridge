@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>냉장고를 부탁해!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="common.js"></script>
+    <script type="text/javascript" src="recipe_recommender.js"></script>
+    <script type="text/javascript" src="stuff_graph.js"></script>
+    <link rel="stylesheet" href="common.css">
+
+</head>
+<body onload="setStuffDropdown()">
+<div class="container">
+    <div class="title" style="width: 100%; text-align: center">
+        <a href="/foodrecommend"><img src="img/logo.png" style="width: 300px;"/></a>
+        <br/>
+        <br/>
+        <p><b>재료를 선택하세요.</b></p>
+    </div>
+    <div id="stuff_group"  class="btn-group" role="group" aria-label="재료" data-toggle="buttons"></div>
+    <div id="recommendation" style="width: 100%; text-align: center;">
+
+        <strong style="width: 100%; text-align: center;">아무래도 이걸 만드는게 좋겠군요!</strong>
+        <br/>
+
+        <div id="recommend_table">
+            <div id="row">
+                <div class="recommend_recipe" id="recommend_1" style="width: 100%">
+                    <strong>강력 추천!</strong>
+                    <h2><span class="recipe_name" id="recipe_name_1"></span></h2>
+                    <br/>
+                    <button id="recipe_search_1" type="button" class="btn btn-success">레시피 검색하기</button>
+                    <br/>
+                    <br/>
+                    <strong>필요한 재료</strong>
+                    <br/>
+                    <ul id="stuff_list_1" class="list-group"></ul>
+                </div>
+
+                <div class="recommend_recipe" id="recommend_2">
+                    <strong>추천!</strong>
+                    <h2><span class="recipe_name" id="recipe_name_2"></span></h2>
+                    <br/>
+                    <button id="recipe_search_2" type="button" class="btn btn-success">레시피 검색하기</button>
+                    <br/>
+                    <br/>
+                    <strong>필요한 재료</strong>
+                    <br/>
+                    <ul id="stuff_list_2" class="list-group"></ul>
+                </div>
+
+                <div class="recommend_recipe" id="recommend_3">
+                    <strong>이건 어때요?</strong>
+                    <h2><span class="recipe_name" id="recipe_name_3"></span></h2>
+                    <br/>
+                    <button id="recipe_search_3" type="button" class="btn btn-success">레시피 검색하기</button>
+                    <br/>
+                    <br/>
+                    <strong>필요한 재료</strong>
+                    <br/>
+                    <ul id="stuff_list_3" class="list-group"></ul>
+                </div>
+            </div>
+        </div>
+       
+    </div>
+</div>
+</body>
+</html>
